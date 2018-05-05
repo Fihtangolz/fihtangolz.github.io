@@ -16,6 +16,8 @@ $ TODO
 # Модульность кода 
 http://en.cppreference.com/w/cpp/language/namespace
 
+ Entity Component System (агрегация) 
+
 
 https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms
 

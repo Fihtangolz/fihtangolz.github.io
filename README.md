@@ -3,6 +3,20 @@
 «Чтобы стать экспертом в практической или научной области, нужны огромный труд и долгое время. Если человек добросовестно трудится каждый час рабочего дня, когда-нибудь он проснется одним из самых компетенткых специалистов своего поколения.» 
 Ульям Джеймс.
 
+# Паттерны проектирования 
+Конечный автомат
+
+
+# Namespace's, type's and template's aliase 
+http://en.cppreference.com/w/cpp/language/namespace_alias
+http://ru.cppreference.com/w/cpp/language/type_alias
+
+$ TODO
+
+# Модульность кода 
+http://en.cppreference.com/w/cpp/language/namespace
+
+
 https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms
 
 # Probabilistic algorithms and data structures 
@@ -16,7 +30,9 @@ C++ Actor Framework
 
 https://natsys-lab.blogspot.ru/2015/09/fast-memory-pool-allocators-boost-nginx.html
 
-
 Генетические алгоритмы 
+
+# Многопоточность 
+http://www.modernescpp.com/index.php/multithreading-in-c-17-and-c-20
 
 

@@ -5,11 +5,17 @@
 
 # Паттерны проектирования 
 Конечный автомат
-Mixin
 Делегат
 Стратегия
 Мост
 Итератор
+
+# Инструменты языков программирования 
+Mixin
+Компоратор 
+Лямбда функции 
+Перечисления 
+
 
 # Namespace's, type's and template's aliase 
 http://en.cppreference.com/w/cpp/language/namespace_alias

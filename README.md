@@ -23,6 +23,9 @@ Class template argument deduction
 Constraints and concepts
 Structured binding declaration
 
+# Техники
+Каламбур типизации
+
 # Namespace's, type's and template's aliase 
 http://en.cppreference.com/w/cpp/language/namespace_alias
 http://ru.cppreference.com/w/cpp/language/type_alias

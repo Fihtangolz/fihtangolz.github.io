@@ -15,7 +15,13 @@ Mixin
 Компоратор 
 Лямбда функции 
 Перечисления 
+Кортежи
 
+fold expression
+Parameter pack
+Class template argument deduction
+Constraints and concepts
+Structured binding declaration
 
 # Namespace's, type's and template's aliase 
 http://en.cppreference.com/w/cpp/language/namespace_alias
@@ -46,5 +52,10 @@ https://natsys-lab.blogspot.ru/2015/09/fast-memory-pool-allocators-boost-nginx.h
 
 # Многопоточность 
 http://www.modernescpp.com/index.php/multithreading-in-c-17-and-c-20
+
+# Программирование для GPU
+# Низкоуровневые возможности, апаратно специфичные средства
+ABI
+
 
 

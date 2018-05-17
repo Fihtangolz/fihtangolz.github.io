@@ -4,35 +4,35 @@
 Ульям Джеймс.
 
 # Паттерны проектирования
-  Порождающие шаблоны проектирования
-    Abstract Factory — Абстрактная фабрика
-    Builder — Строитель
-    Factory Method — Фабричный метод
-    Prototype — Прототип
-    Singleton — Одиночка
-  Структурные шаблоны проектирования
-    Adapter — Адаптер
-    Bridge — Мост
-    Composite — Компоновщик
-    Decorator — Декоратор
-    Facade — Фасад
-    Flyweight — Приспособленец
-    Proxy — Заместитель
-Поведенческие шаблоны проектирования
-    Chain of responsibility — Цепочка обязанностей
-    Command — Команда
-    Interpreter — Интерпретатор
-    Iterator — Итератор
-    Mediator — Посредник
-    Memento — Хранитель
-    Observer — Наблюдатель
-    State — Состояние
-    Strategy — Стратегия
-    Template method — Шаблонный метод
-    Visitor — Посетитель
+  * Порождающие шаблоны проектирования
+    * Abstract Factory — Абстрактная фабрика
+    * Builder — Строитель
+    * Factory Method — Фабричный метод
+    * Prototype — Прототип
+    * Singleton — Одиночка
+ * Структурные шаблоны проектирования
+    * Adapter — Адаптер
+    * Bridge — Мост
+    * Composite — Компоновщик
+    * Decorator — Декоратор
+    * Facade — Фасад
+    * Flyweight — Приспособленец
+    * Proxy — Заместитель
+    * Delegation - Делегирование
+* Поведенческие шаблоны проектирования
+    * Chain of responsibility — Цепочка обязанностей
+    * Command — Команда
+    * Interpreter — Интерпретатор
+    * Iterator — Итератор
+    * Mediator — Посредник
+    * Memento — Хранитель
+    * Observer — Наблюдатель
+    * State — Состояние
+    * Strategy — Стратегия
+    * Template method — Шаблонный метод
+    * Visitor — Посетитель
     
 * Конечный автомат
-* Делегат
 
 # Инструменты языков программирования 
 * Mixin

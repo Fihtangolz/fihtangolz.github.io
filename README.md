@@ -88,6 +88,7 @@ http://www.modernescpp.com/index.php/multithreading-in-c-17-and-c-20
 * Intrinsic
 * SIMD Extensions
 * BLOB
+* Написание драйверов
 
 
 

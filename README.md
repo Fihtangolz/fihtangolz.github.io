@@ -106,6 +106,7 @@ http://www.modernescpp.com/index.php/multithreading-in-c-17-and-c-20
   </details>
   * Assembler 
   # Обеспечение безопасности для embeded устройств  
+  https://gcc.gnu.org/onlinedocs/gcc/Integer-Overflow-Builtins.html
   * MISRO C 
   * unit тесты для C 
   1) Выделение всей памяти на стэке или выделение памяти только во время старта программы 

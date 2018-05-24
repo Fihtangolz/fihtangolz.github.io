@@ -104,6 +104,11 @@ http://www.modernescpp.com/index.php/multithreading-in-c-17-and-c-20
 
 Источник: Фейл gcc (или назвался intrinsic'ом — полезай в оптимизатор)</p>
   </details>
+  * Assembler 
+  # Обеспечение безопасности для embeded устройств  
+  * MISRO C 
+  * unit тесты для C 
+  1) Выделение всей памяти на стэке или выделение памяти только во время старта программы 
 
 
 

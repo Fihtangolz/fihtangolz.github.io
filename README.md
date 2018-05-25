@@ -105,6 +105,7 @@ http://www.modernescpp.com/index.php/multithreading-in-c-17-and-c-20
 Источник: Фейл gcc (или назвался intrinsic'ом — полезай в оптимизатор)</p>
   </details>
   * Assembler 
+  * Микрокод
   # Обеспечение безопасности для embeded устройств  
   https://gcc.gnu.org/onlinedocs/gcc/Integer-Overflow-Builtins.html
   * MISRO C 

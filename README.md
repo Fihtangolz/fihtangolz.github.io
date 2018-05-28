@@ -99,6 +99,9 @@ https://natsys-lab.blogspot.ru/2015/09/fast-memory-pool-allocators-boost-nginx.h
 
 # Генетические алгоритмы 
 
+# Статистические алгоритмы ?
+* Алгоритмы голосования
+
 # Многопоточность 
 http://www.modernescpp.com/index.php/multithreading-in-c-17-and-c-20
 

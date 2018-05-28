@@ -70,23 +70,23 @@ http://en.cppreference.com/w/cpp/language/namespace
 https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms
 
 # Probabilistic algorithms and data structures 
-*Bloom filter
-*Count–min sketch
-*HyperLogLog
-*Kinetic hanger
-*Kinetic heater
-*Locality-sensitive hashing
-*MinHash
-*Quotient filter
-*Random binary tree
-*Random tree
-*Rapidly-exploring random tree
-*SimHash
-*Skip list
-*Treap
-*Filtered-Space Saving Top-K
-*T-Digest
-*Cuckoo Filter
+* Bloom filter
+* Count–min sketch
+* HyperLogLog
+* Kinetic hanger
+* Kinetic heater
+* Locality-sensitive hashing
+* MinHash
+* Quotient filter
+* Random binary tree
+* Random tree
+* Rapidly-exploring random tree
+* SimHash
+* Skip list
+* Treap
+* Filtered-Space Saving Top-K
+* T-Digest
+* Cuckoo Filter
 
 # Event based paradigm  
 CPP

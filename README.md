@@ -88,6 +88,7 @@ http://www.modernescpp.com/index.php/multithreading-in-c-17-and-c-20
 # Программирование для GPU
 # Низкоуровневые возможности, апаратно специфичные средства
 * ABI
+* Calling convention
 * [SIMD Extensions](https://laurent-leturgez.com/2015/04/22/simd-extensions-in-and-out-oracle-12-1-0-2/)
 * BLOB
 * Написание драйверов

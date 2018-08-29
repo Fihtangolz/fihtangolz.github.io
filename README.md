@@ -43,7 +43,7 @@
 * Перечисления 
 * Кортежи
 * Имянованные параметры
-
+* CTFE
 * fold expression
 * Parameter pack
 * Class template argument deduction
@@ -55,6 +55,7 @@
 * Карирование 
 * Частичное применение 
 * Сериализация
+* RMI 
 
 # Namespace's, type's and template's aliase 
 http://en.cppreference.com/w/cpp/language/namespace_alias
@@ -68,6 +69,13 @@ http://en.cppreference.com/w/cpp/language/namespace
 
 
 https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms
+
+# Структуры данных
+* Куча 
+* Стэк
+* Динамический массив
+* Hash Map 
+Б-деревья 
 
 # Probabilistic algorithms and data structures 
 * Bloom filter
@@ -87,6 +95,9 @@ https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms
 * Filtered-Space Saving Top-K
 * T-Digest
 * Cuckoo Filter
+
+# Cache-Oblivious Algorithms and Data Structures
+
 
 # Event based paradigm  
 CPP

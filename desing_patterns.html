@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Паттерны проектирования - Samurai Coders Guide</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">var path_to_root = "";</script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="introduction.html"><strong aria-hidden="true">1.</strong> Введение</a></li><li><a href="macros.html"><strong aria-hidden="true">2.</strong> Препроцессор</a></li><li><a href="type_system.html"><strong aria-hidden="true">3.</strong> Система типов</a></li><li><a href="user_literal.html"><strong aria-hidden="true">4.</strong> Пользовательские литералы</a></li><li><a href="bit_field.html"><strong aria-hidden="true">5.</strong> Битовые поля</a></li><li><a href="function.html"><strong aria-hidden="true">6.</strong> Функции</a></li><li><a href="lambda_functions.html"><strong aria-hidden="true">7.</strong> Lambda functions</a></li><li><a href="exceptions.html"><strong aria-hidden="true">8.</strong> Исключения</a></li><li><a href="class.html"><strong aria-hidden="true">9.</strong> Классы</a></li><li><a href="template.html"><strong aria-hidden="true">10.</strong> Шаблонны</a></li><li><ol class="section"><li><a href="template_deduction_guides.html"><strong aria-hidden="true">10.1.</strong> Template deduction guides</a></li><li><a href="parameter_pack.html"><strong aria-hidden="true">10.2.</strong> Parameter pack</a></li><li><a href="fold_expression.html"><strong aria-hidden="true">10.3.</strong> fold expression</a></li></ol></li><li><a href="attribute.html"><strong aria-hidden="true">11.</strong> Атрибуты</a></li><li><a href="move_semantics.html"><strong aria-hidden="true">12.</strong> Семантика перемешения</a></li><li><a href="error_handling.html"><strong aria-hidden="true">13.</strong> Обработка ошибок</a></li><li><a href="competitiveness_and_polymorphism.html"><strong aria-hidden="true">14.</strong> Конкуретность и полиморфизм</a></li><li><a href="fstm.html"><strong aria-hidden="true">15.</strong> Конечные автоматы</a></li><li><a href="regex.html"><strong aria-hidden="true">16.</strong> Регулярыне выражения</a></li><li><a href="desing_patterns.html" class="active"><strong aria-hidden="true">17.</strong> Паттерны проектирования</a></li><li><a href="idioms.html"><strong aria-hidden="true">18.</strong> Идиомы</a></li><li><a href="algorithms.html"><strong aria-hidden="true">19.</strong> Введение в алгоритмы</a></li><li><a href="data_structures.html"><strong aria-hidden="true">20.</strong> Структуры данных</a></li><li><a href="probabilistic.html"><strong aria-hidden="true">21.</strong> Probabilistic algorithms and data structures</a></li><li><a href="assembler.html"><strong aria-hidden="true">22.</strong> Assembler</a></li><li><a href="logging.html"><strong aria-hidden="true">23.</strong> Логирование</a></li><li><a href="profiling.html"><strong aria-hidden="true">24.</strong> Профилирование</a></li><li><a href="paradigms/index.html"><strong aria-hidden="true">25.</strong> Парадигмы</a></li><li><ol class="section"><li><a href="paradigms/functional.html"><strong aria-hidden="true">25.1.</strong> Функциональна парадигма</a></li><li><a href="paradigms/reactive.html"><strong aria-hidden="true">25.2.</strong> Реактивная парадигма</a></li></ol></li><li><a href="workflow.html"><strong aria-hidden="true">26.</strong> Workflow</a></li><li><a href="unit_tests.html"><strong aria-hidden="true">27.</strong> Unit tests</a></li><li><a href="devtools.html"><strong aria-hidden="true">28.</strong> DevTools</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Samurai Coders Guide</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#aПаттерны-проектирования" id="aПаттерны-проектирования"><h1>Паттерны проектирования</h1></a>
+<ul>
+<li>
+<p>Порождающие шаблоны проектирования</p>
+<ul>
+<li>Abstract Factory — Абстрактная фабрика</li>
+<li>Builder — Строитель</li>
+<li>Factory Method — Фабричный метод</li>
+<li>Prototype — Прототип</li>
+<li>Singleton — Одиночка</li>
+</ul>
+</li>
+<li>
+<p>Структурные шаблоны проектирования</p>
+<ul>
+<li>Adapter — Адаптер</li>
+<li>Bridge — Мост</li>
+<li>Composite — Компоновщик</li>
+<li>Decorator — Декоратор</li>
+<li>Facade — Фасад</li>
+<li>Flyweight — Приспособленец</li>
+<li>Proxy — Заместитель</li>
+<li>Delegation - Делегирование</li>
+</ul>
+</li>
+<li>
+<p>Поведенческие шаблоны проектирования</p>
+<ul>
+<li>Chain of responsibility — Цепочка обязанностей</li>
+<li>Command — Команда</li>
+<li>Interpreter — Интерпретатор</li>
+<li>Iterator — Итератор</li>
+<li>Mediator — Посредник</li>
+<li>Memento — Хранитель</li>
+<li>Observer — Наблюдатель</li>
+<li>State — Состояние</li>
+<li>Strategy — Стратегия</li>
+<li>Template method — Шаблонный метод</li>
+<li>Visitor — Посетитель</li>
+</ul>
+<p>//--------------------------------------------------------------------------
+Шаблонны проектирования
+Читая книгу по STL я столкнулся с термином адаптер и сразу полез в поисковик что бы осветить этот вопрос и ни чего полезного не нашел.
+В книге говорится что это реализация одного типа контейнера другим типом контейнера. В общем понятного мало.
+Расскажите своими словами что такое адаптер в STL.</p>
+</li>
+</ul>
+<p>The Gang of Four (GoF)(from Design Patterns: Elements of  Reusable Object-Oriented Software, Addison-Wesley Professional Computing Series, by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides).
+These 23 GoF patterns are generally considered the foundation for all other patterns. They are categorized in three groups: Creational, Structural, and Behavioral.
+Creational Patterns</p>
+<ol>
+<li>Abstract Factory:  Creates an instance of several families of classes. Provide an interface for creating families of related or dependent objects without specifying their concrete classes.</li>
+<li>Builder: Separates object construction from its representation. Separate the construction of a complex object from its representation so that the same construction processes can create different representations.</li>
+<li>Factory Method: Creates an instance of several derived classes. Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.</li>
+<li>Prototype: A fully initialized instance to be copied or cloned. Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.</li>
+<li>Singleton: A class of which only a single instance can exist. Ensure a class only has one instance, and provide a global point of access to it.
+Structural Patterns</li>
+<li>Adapter: Match interfaces of different classes.Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.</li>
+<li>Bridge: Separates an object’s interface from its implementation. Decouple an abstraction from its implementation so that the two can vary independently.</li>
+<li>Composite: A tree structure of simple and composite objects. Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.</li>
+<li>Decorator: Add responsibilities to objects dynamically.  Attach additional responsibilities to an object dynamically. Decorators provide a             flexible alternative to subclassing for extending functionality.</li>
+<li>Facade: A single class that represents an entire subsystem. Provide a unified interface to a set of interfaces in a system. Facade defines a higher-level interface that makes the subsystem easier to use.</li>
+<li>Flyweight: A fine-grained instance used for efficient sharing. Use sharing to support large numbers of fine-grained objects efficiently. A flyweight is a shared object that can be used in multiple contexts simultaneously. The flyweight acts as an independent object in each context — it’s indistinguishable from an instance of the object that’s not shared.</li>
+<li>Proxy: An object representing another object. Provide a surrogate or placeholder for another object to control access to it.
+Behavioral Patterns</li>
+<li>Chain of Resp. : A way of passing a request between a chain of objects. Avoid coupling the sender of a request to its receiver by giving more than one object a  chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.</li>
+<li>Command: Encapsulate a command request as an object. Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.</li>
+<li>Interpreter: A way to include language elements in a program. Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.</li>
+<li>Iterator: Sequentially access the elements of a collection. Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.</li>
+<li>Mediator: Defines simplified communication between classes. Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.</li>
+<li>Memento: Capture and restore an object's internal state. Without violating encapsulation, capture and externalize an object’s internal state so that the object can be restored to this state later.</li>
+<li>Observer: A way of notifying change to a number of classes. Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.</li>
+<li>State: Alter an object's behavior when its state changes. Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.</li>
+<li>Strategy: Encapsulates an algorithm inside a class. Define a family of algorithms, encapsulate each one, and make them interchangeable.            Strategy lets the algorithm vary independently from clients that use it.</li>
+<li>Template: Defer the exact steps of an algorithm to a subclass. Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.</li>
+<li>Visitor: Defines a new operation to a class without change. Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+I must also mention and credit goes to http://www.dofactory.com/Patterns/Patterns.aspx for the most of the above information.</li>
+</ol>
+<p>https://www.martinfowler.com/eaaCatalog/</p>
+<hr />
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="regex.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="idioms.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="regex.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="idioms.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

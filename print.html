@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>samuraiCodersGuide</title>
+        <title>Samurai Coders Guide</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,7 +72,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+            <ol class="chapter"><li><a href="introduction.html"><strong aria-hidden="true">1.</strong> Введение</a></li><li><a href="macros.html"><strong aria-hidden="true">2.</strong> Препроцессор</a></li><li><a href="type_system.html"><strong aria-hidden="true">3.</strong> Система типов</a></li><li><a href="user_literal.html"><strong aria-hidden="true">4.</strong> Пользовательские литералы</a></li><li><a href="bit_field.html"><strong aria-hidden="true">5.</strong> Битовые поля</a></li><li><a href="function.html"><strong aria-hidden="true">6.</strong> Функции</a></li><li><a href="lambda_functions.html"><strong aria-hidden="true">7.</strong> Lambda functions</a></li><li><a href="exceptions.html"><strong aria-hidden="true">8.</strong> Исключения</a></li><li><a href="class.html"><strong aria-hidden="true">9.</strong> Классы</a></li><li><a href="template.html"><strong aria-hidden="true">10.</strong> Шаблонны</a></li><li><ol class="section"><li><a href="template_deduction_guides.html"><strong aria-hidden="true">10.1.</strong> Template deduction guides</a></li><li><a href="parameter_pack.html"><strong aria-hidden="true">10.2.</strong> Parameter pack</a></li><li><a href="fold_expression.html"><strong aria-hidden="true">10.3.</strong> fold expression</a></li></ol></li><li><a href="attribute.html"><strong aria-hidden="true">11.</strong> Атрибуты</a></li><li><a href="move_semantics.html"><strong aria-hidden="true">12.</strong> Семантика перемешения</a></li><li><a href="error_handling.html"><strong aria-hidden="true">13.</strong> Обработка ошибок</a></li><li><a href="competitiveness_and_polymorphism.html"><strong aria-hidden="true">14.</strong> Конкуретность и полиморфизм</a></li><li><a href="fstm.html"><strong aria-hidden="true">15.</strong> Конечные автоматы</a></li><li><a href="regex.html"><strong aria-hidden="true">16.</strong> Регулярыне выражения</a></li><li><a href="desing_patterns.html"><strong aria-hidden="true">17.</strong> Паттерны проектирования</a></li><li><a href="idioms.html"><strong aria-hidden="true">18.</strong> Идиомы</a></li><li><a href="algorithms.html"><strong aria-hidden="true">19.</strong> Введение в алгоритмы</a></li><li><a href="data_structures.html"><strong aria-hidden="true">20.</strong> Структуры данных</a></li><li><a href="probabilistic.html"><strong aria-hidden="true">21.</strong> Probabilistic algorithms and data structures</a></li><li><a href="assembler.html"><strong aria-hidden="true">22.</strong> Assembler</a></li><li><a href="logging.html"><strong aria-hidden="true">23.</strong> Логирование</a></li><li><a href="profiling.html"><strong aria-hidden="true">24.</strong> Профилирование</a></li><li><a href="paradigms/index.html"><strong aria-hidden="true">25.</strong> Парадигмы</a></li><li><ol class="section"><li><a href="paradigms/functional.html"><strong aria-hidden="true">25.1.</strong> Функциональна парадигма</a></li><li><a href="paradigms/reactive.html"><strong aria-hidden="true">25.2.</strong> Реактивная парадигма</a></li></ol></li><li><a href="workflow.html"><strong aria-hidden="true">26.</strong> Workflow</a></li><li><a href="unit_tests.html"><strong aria-hidden="true">27.</strong> Unit tests</a></li><li><a href="devtools.html"><strong aria-hidden="true">28.</strong> DevTools</a></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -102,7 +102,7 @@
                             
                         </div>
 
-                        <h1 class="menu-title">samuraiCodersGuide</h1> 
+                        <h1 class="menu-title">Samurai Coders Guide</h1> 
 
                         <div class="right-buttons">
                             <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -136,7 +136,346 @@
 
                 <div id="content" class="content">
                     <main>
-                        <a class="header" href="#chapter-1" id="chapter-1"><h1>Chapter 1</h1></a>
+                        <a class="header" href="#aРуководство-кодеров-самураев" id="aРуководство-кодеров-самураев"><h1>Руководство кодеров-самураев</h1></a>
+<p>«Чтобы стать экспертом в практической или научной области, нужны огромный труд и долгое время. Если человек добросовестно трудится каждый час рабочего дня, когда-нибудь он проснется одним из самых компетенткых специалистов своего поколения.»
+Ульям Джеймс.</p>
+<p>https://github.com/pfultz2/Cloak/wiki/C-Preprocessor-tricks,-tips,-and-idioms
+https://gcc.gnu.org/onlinedocs/cpp/Macros.html
+https://www.programiz.com/c-programming/c-preprocessor-macros
+https://www.cprogramming.com/tutorial/cpreprocessor.html
+https://stackoverflow.com/questions/650461/what-are-some-tricks-i-can-use-with-macros
+http://jhnet.co.uk/articles/cpp_magic
+https://en.wikibooks.org/wiki/C_Programming/Preprocessor_directives_and_macros
+http://www.keithschwarz.com/cs106l/spring2009/handouts/080_Preprocessor_2.pdf
+https://www.geeksforgeeks.org/interesting-facts-preprocessors-c/
+http://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/c_preprocessor_applications_en
+https://www.iar.com/support/resources/articles/advanced-preprocessor-tips-and-tricks/
+http://www.drdobbs.com/cpp/the-x-macro/228700289
+https://docs.freebsd.org/info/cpp/cpp.pdf
+https://www.quora.com/What-are-macros-in-C
+https://books.google.ru/books?id=ngulWQWRCbYC&amp;pg=PT148&amp;lpg=PT148&amp;dq=macros+advance+c&amp;source=bl&amp;ots=gCS3ToCjtN&amp;sig=GzEJAlLzErX5M6F6fF5qnuEniCU&amp;hl=ru&amp;sa=X&amp;ved=0ahUKEwiKysiKx5jZAhUkiaYKHUe-B2o4ChDoAQhcMAY#v=onepage&amp;q=macros%20advance%20c&amp;f=false
+https://books.google.ru/books?id=NNpCDwAAQBAJ&amp;pg=PA486&amp;lpg=PA486&amp;dq=macros+advance+c&amp;source=bl&amp;ots=5GsBGlHbhc&amp;sig=eF9SRtQjG4JgXI6fuE0jzVxW3mI&amp;hl=ru&amp;sa=X&amp;ved=0ahUKEwiKysiKx5jZAhUkiaYKHUe-B2o4ChDoAQhgMAc#v=onepage&amp;q=macros%20advance%20c&amp;f=false
+https://books.google.ru/books?id=l8QPUGuElFwC&amp;pg=SA4-PA22&amp;lpg=SA4-PA22&amp;dq=macros+advance+c&amp;source=bl&amp;ots=4tN6pRNoaA&amp;sig=KcYTDUqPu9EkwcUw7Ga8aAfLb5c&amp;hl=ru&amp;sa=X&amp;ved=0ahUKEwiKysiKx5jZAhUkiaYKHUe-B2o4ChDoAQhmMAg#v=onepage&amp;q=macros%20advance%20c&amp;f=false
+https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm</p>
+<a class="header" href="#aСистема-типов" id="aСистема-типов"><h1>Система типов</h1></a>
+<a class="header" href="#aПользовательские-литералы" id="aПользовательские-литералы"><h1>Пользовательские литералы</h1></a>
+<p>errno
+исключения на чистом си
+исключения на с++ https://habr.com/post/279111/
+решения</p>
+<a class="header" href="#aКлассы" id="aКлассы"><h1>Классы</h1></a>
+<p>Порядок конструирования,
+Порядок деструкции (для одного класса)</p>
+<p>Правило нуля
+Правило трех
+Правило пяти
+Правило ноля</p>
+<p>Модификаторы доступа</p>
+<p>Наследование</p>
+<a class="header" href="#aШаблонны" id="aШаблонны"><h1>Шаблонны</h1></a>
+<p>Шаблонны на чистом си
+https://habr.com/post/154811/</p>
+<a class="header" href="#fold-expression" id="fold-expression"><h1>fold expression</h1></a>
+<p><strong>attribute</strong>((destructor))</p>
+<p>Обработка ошибок
+Как и любая технология обработка ошибок притерпела существенные эволюционные изменения
+однако даже на сегодняшний день нет четко устоящегося мнения о том как верно проводить
+обработку ошибок.
+Типичный случай ручная обработка ошибок
+error some(p1, p2){}
+obj* some(p1, p2)</p>
+<p>Конкуренция и параллелизм</p>
+<p>Конкурентность позволяет иметь дело с несколькими вещами одновременно,
+а параллелизм — делать несколько вещей одновременно.</p>
+<p>Тру шеринг
+Фолс шеринг</p>
+<p>http://parallel.ru/krukov/lec2.html#2_2</p>
+<p>https://habrahabr.ru/post/184436/
+https://habrahabr.ru/post/311560/
+https://habrahabr.ru/post/337528/
+https://habrahabr.ru/post/150788/
+https://habrahabr.ru/company/infopulse/blog/311134/
+https://habrahabr.ru/post/244881/
+https://habrahabr.ru/post/197520/
+https://habrahabr.ru/post/340732/
+https://habrahabr.ru/company/ibm/blog/134698/
+https://www.youtube.com/watch?v=z6irMP_X630&amp;list=PLH-XmS0lSi_zgq3zKR1idGm65YLTDJ2LA&amp;index=9</p>
+<p>https://habrahabr.ru/post/348890/</p>
+<a class="header" href="#aПаттерны-проектирования" id="aПаттерны-проектирования"><h1>Паттерны проектирования</h1></a>
+<ul>
+<li>
+<p>Порождающие шаблоны проектирования</p>
+<ul>
+<li>Abstract Factory — Абстрактная фабрика</li>
+<li>Builder — Строитель</li>
+<li>Factory Method — Фабричный метод</li>
+<li>Prototype — Прототип</li>
+<li>Singleton — Одиночка</li>
+</ul>
+</li>
+<li>
+<p>Структурные шаблоны проектирования</p>
+<ul>
+<li>Adapter — Адаптер</li>
+<li>Bridge — Мост</li>
+<li>Composite — Компоновщик</li>
+<li>Decorator — Декоратор</li>
+<li>Facade — Фасад</li>
+<li>Flyweight — Приспособленец</li>
+<li>Proxy — Заместитель</li>
+<li>Delegation - Делегирование</li>
+</ul>
+</li>
+<li>
+<p>Поведенческие шаблоны проектирования</p>
+<ul>
+<li>Chain of responsibility — Цепочка обязанностей</li>
+<li>Command — Команда</li>
+<li>Interpreter — Интерпретатор</li>
+<li>Iterator — Итератор</li>
+<li>Mediator — Посредник</li>
+<li>Memento — Хранитель</li>
+<li>Observer — Наблюдатель</li>
+<li>State — Состояние</li>
+<li>Strategy — Стратегия</li>
+<li>Template method — Шаблонный метод</li>
+<li>Visitor — Посетитель</li>
+</ul>
+<p>//--------------------------------------------------------------------------
+Шаблонны проектирования
+Читая книгу по STL я столкнулся с термином адаптер и сразу полез в поисковик что бы осветить этот вопрос и ни чего полезного не нашел.
+В книге говорится что это реализация одного типа контейнера другим типом контейнера. В общем понятного мало.
+Расскажите своими словами что такое адаптер в STL.</p>
+</li>
+</ul>
+<p>The Gang of Four (GoF)(from Design Patterns: Elements of  Reusable Object-Oriented Software, Addison-Wesley Professional Computing Series, by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides).
+These 23 GoF patterns are generally considered the foundation for all other patterns. They are categorized in three groups: Creational, Structural, and Behavioral.
+Creational Patterns</p>
+<ol>
+<li>Abstract Factory:  Creates an instance of several families of classes. Provide an interface for creating families of related or dependent objects without specifying their concrete classes.</li>
+<li>Builder: Separates object construction from its representation. Separate the construction of a complex object from its representation so that the same construction processes can create different representations.</li>
+<li>Factory Method: Creates an instance of several derived classes. Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.</li>
+<li>Prototype: A fully initialized instance to be copied or cloned. Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.</li>
+<li>Singleton: A class of which only a single instance can exist. Ensure a class only has one instance, and provide a global point of access to it.
+Structural Patterns</li>
+<li>Adapter: Match interfaces of different classes.Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.</li>
+<li>Bridge: Separates an object’s interface from its implementation. Decouple an abstraction from its implementation so that the two can vary independently.</li>
+<li>Composite: A tree structure of simple and composite objects. Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.</li>
+<li>Decorator: Add responsibilities to objects dynamically.  Attach additional responsibilities to an object dynamically. Decorators provide a             flexible alternative to subclassing for extending functionality.</li>
+<li>Facade: A single class that represents an entire subsystem. Provide a unified interface to a set of interfaces in a system. Facade defines a higher-level interface that makes the subsystem easier to use.</li>
+<li>Flyweight: A fine-grained instance used for efficient sharing. Use sharing to support large numbers of fine-grained objects efficiently. A flyweight is a shared object that can be used in multiple contexts simultaneously. The flyweight acts as an independent object in each context — it’s indistinguishable from an instance of the object that’s not shared.</li>
+<li>Proxy: An object representing another object. Provide a surrogate or placeholder for another object to control access to it.
+Behavioral Patterns</li>
+<li>Chain of Resp. : A way of passing a request between a chain of objects. Avoid coupling the sender of a request to its receiver by giving more than one object a  chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.</li>
+<li>Command: Encapsulate a command request as an object. Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.</li>
+<li>Interpreter: A way to include language elements in a program. Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.</li>
+<li>Iterator: Sequentially access the elements of a collection. Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.</li>
+<li>Mediator: Defines simplified communication between classes. Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.</li>
+<li>Memento: Capture and restore an object's internal state. Without violating encapsulation, capture and externalize an object’s internal state so that the object can be restored to this state later.</li>
+<li>Observer: A way of notifying change to a number of classes. Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.</li>
+<li>State: Alter an object's behavior when its state changes. Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.</li>
+<li>Strategy: Encapsulates an algorithm inside a class. Define a family of algorithms, encapsulate each one, and make them interchangeable.            Strategy lets the algorithm vary independently from clients that use it.</li>
+<li>Template: Defer the exact steps of an algorithm to a subclass. Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.</li>
+<li>Visitor: Defines a new operation to a class without change. Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+I must also mention and credit goes to http://www.dofactory.com/Patterns/Patterns.aspx for the most of the above information.</li>
+</ol>
+<p>https://www.martinfowler.com/eaaCatalog/</p>
+<hr />
+<p>https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Generic_Container_Idioms
+Address Of
+Algebraic Hierarchy
+Attach by Initialization
+Attorney-Client
+Barton-Nackman trick 
+Base-from-Member 
+Boost mutant
+Calling Virtuals During Initialization
+Capability Query
+Checked delete
+Clear-and-minimize
+Coercion by Member Template
+Computational Constructor
+Concrete Data Type
+Construct On First Use
+Construction Tracker
+Copy-and-swap
+Copy-on-write
+Intrusive reference counting (Counted Body)
+Covariant Return Types
+Curiously Recurring Template Pattern (CRTP)
+Empty Base Optimization (EBO)
+enable-if
+Erase-Remove
+Execute-Around Pointer
+Exploding Return Type
+Export Guard Macro
+Expression-template
+Fake Vtable
+Fast Pimpl
+Final Class
+Free Function Allocators
+Function Object 
+Generic Container Idioms
+Hierarchy Generation
+Include Guard Macro
+Inline Guard Macro
+Inner Class
+Int-To-Type
+Interface Class
+Iterator Pair
+Making New Friends
+Metafunction
+Move Constructor ￼
+Multi-statement Macro ￼
+Member Detector ￼
+Named Constructor ￼
+Named External Argument 
+Named Loop (labeled loop) ￼
+Named Parameter ￼
+Named Template Parameters 
+Nifty Counter (Schwarz Counter) ￼
+Non-copyable Mixin ￼
+Non-member Non-friend Function ￼ 
+Non-throwing swap ￼
+Non-Virtual Interface (NVI, Public Overloaded Non-Virtuals Call Protected Non-Overloaded Virtuals) ￼
+nullptr ￼
+Object Generator ￼
+Object Template TODO
+Parameterized Base Class (Parameterized Inheritance) ￼
+Pimpl (Handle Body, Compilation Firewall, Cheshire Cat) ￼
+Policy Clone (Metafunction wrapper) ￼
+Policy-based Design TODO
+Polymorphic Exception ￼
+Polymorphic Value Types ￼ TODO
+Recursive Type Composition TODO
+Requiring or Prohibiting Heap-based Objects
+Resource Acquisition Is Initialization (RAII, Execute-Around Object, Scoped Locking) ￼
+Resource Return ￼
+Return Type Resolver ￼
+Runtime Static Initialization Order Idioms ￼
+Safe bool ￼
+Scope Guard ￼
+Substitution Failure Is Not An Error (SFINAE) ￼
+Shortening Long Template Names TODO
+Shrink-to-fit ￼
+Small Object Optimization TODO
+Smart Pointer ￼
+Storage Class Tracker TODO
+Tag Dispatching ￼ TODO
+Temporary Base Class ￼
+Temporary Proxy ￼
+The result_of technique TODO
+Thin Template ￼
+Traits ￼ TODO
+Type Erasure ￼
+Type Generator (Templated Typedef) ￼
+Type Safe Enum ￼
+Type Selection ￼
+Virtual Constructor ￼
+Virtual Friend Function ￼</p>
+<p>Advanced idioms[edit]
+These are some more advanced C++ idioms.</p>
+<ol>
+<li>Envelope Letter ￼ TODO
+ 
+Deprecated idioms[edit]</li>
+<li>Const auto_ptr ￼</li>
+</ol>
+<p>В магазин, ближайший к вашему дому, показываете на машину,
+ближайшую к двери, и говорите: «Я беру эту». Этот алгоритм позволяет
+тратить минимум времени на не очень важные дела (покупку автомобилей) и оставляет
+большую часть времени на важные (разработку суперкомпьютеров).
+Се́ймур Роджер Крэй, умер в октябре 1996 года от ранений, полученных в автокатастрофе.
+Из книги Таненбаума Архетектура Компьютера</p>
+<p>Жадные алгоритмы
+probabilistic algorithm</p>
+<p>Алгоритмы поиска на графах (из википедии)
+http://aliev.me/runestone/Trees/TreeTraversals.html
+https://medium.com/@dimko1/%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B-%D0%BE%D0%B1%D1%85%D0%BE%D0%B4-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%B0-ed54848c2d47</p>
+<p>Структуры данных:
+Абстрактные типы данных
+Конкретные типы данных</p>
+<p>Персистентные, вероятностные,</p>
+<p>Управляемые / не управляемые</p>
+<p>POD</p>
+<p>hashMap
+hashSet
+Очередь с приоритетом
+Приоритетная очередь (разные штуки)?
+стэк</p>
+<p>Quotient filter
+Списки с пропусками https://habrahabr.ru/post/230413/
+https://habrahabr.ru/post/115147/
+https://habrahabr.ru/post/119852/
+https://habrahabr.ru/post/250673/
+https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BF%D1%8C_%D0%9C%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%B0</p>
+<a class="header" href="#probabilistic-algorithms-and-data-structures" id="probabilistic-algorithms-and-data-structures"><h1>Probabilistic algorithms and data structures</h1></a>
+<ul>
+<li>Bloom filter</li>
+<li>Count–min sketch</li>
+<li>HyperLogLog</li>
+<li>Kinetic hanger</li>
+<li>Kinetic heater</li>
+<li>Locality-sensitive hashing</li>
+<li>MinHash</li>
+<li>Quotient filter</li>
+<li>Random binary tree</li>
+<li>Random tree</li>
+<li>Rapidly-exploring random tree</li>
+<li>SimHash</li>
+<li>Skip list</li>
+<li>Treap</li>
+<li>Filtered-Space Saving Top-K</li>
+<li>T-Digest</li>
+<li>Cuckoo Filter</li>
+</ul>
+<p>https://habrahabr.ru/post/128991/</p>
+<a class="header" href="#aЛогирование" id="aЛогирование"><h1>Логирование</h1></a>
+<p>http://fevt.ru/publ/profajling_v_programmirovanii/11-1-0-182</p>
+<p>-Наш мир не состоит из объектов.
+-Совершенно очевидно, что мир состоит из иммутабельных структур,
+а где-то рядом витают модули, в которых есть функции, позволяющие взять,
+например, иммутабельное яблоко и создать на его основе такое же, только без кожуры.</p>
+<p>https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%8B_%D0%B8_%D1%81%D0%BB%D0%BE%D1%82%D1%8B</p>
+<p>https://habrahabr.ru/post/279715/
+https://habrahabr.ru/post/195562/</p>
+<p>.clang-format
+.clang-tidy
+.gitattributes
+.gitignore
+.hooks-config
+https://github.com/marketplace/category/continuous-integration/
+https://guides.github.com/features/mastering-markdown/
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</p>
+<hr />
+<p>https://habrahabr.ru/post/125799/
+http://ndpsoftware.com/git-cheatsheet.html#loc=index
+https://img.shields.io/
+Добавить ссылку на маркдаун
+https://stackedit.io/app</p>
+<p>Rocket Github Guid</p>
+<p>Используйте https://semver.org/lang/ru/</p>
+<p>Дайте краткое описание вашего проекта, если необходимо приложите скриншоты
+Укажите основные фитчи
+Дайте гайд по установке проекта
+Дайте гад по работе над проектом</p>
+<p>Структура проекта
+Если проект требует для работы дополнительных утилит, приложите
+скрипт установки или краткий гайд, если вы используете собственные
+утилиты преложите их в соотвествующей папке</p>
+<p>Укажите зависимости вашего проекта
+//....</p>
+<p>Мои правила разработки софта и прочей драни</p>
+<ol>
+<li>При возникновении вопроса в проектировке или реверсинга софта типа Дак до какого чего нужно спустится до чего мать его? До идеи</li>
+<li>Каждый час спрашивайте, а не хуйню ли я делаю.</li>
+<li>Не гонитесь за модой, но и не обрастайте мхом! Учите то что вам интересно подхватывайте уже проверенные не только хайпом вещи.</li>
+<li>Преждевременная оптимизация хуже преждевременной эякуляции</li>
+<li>Если для проекта в котором ничего не понятно вы делаете костыль, то вероятно вы используете бестпрактис этого проекта, а как результат не будете выделяться на общем фоне и нарушать хрупкий баланс и эстетику остального кода</li>
+<li>Не знаете с чего начать? Начните с чего-нибудь.</li>
+<li>К оценке успешности выполненной задачи: Получилось хорошо. Не получилось - ну и нахуй.</li>
+</ol>
+<p>https://habrahabr.ru/post/244835/</p>
 
                     </main>
 
